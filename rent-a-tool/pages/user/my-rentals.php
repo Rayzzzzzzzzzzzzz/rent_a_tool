@@ -51,8 +51,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['return_rental'])) {
                 rental_status = 'completed', deposit_status = ?
             WHERE id = ?
         ");
-        $stmt->bind_param("ssiidssi", $return_date, $post_condition, $condition_ok, $late_fee, $late_fee, $deposit_status, $rental_id);
-        
+        $stmt->bind_param(
+         "ssiisi",
+         $return_date,
+         $post_condition,
+         $condition_ok,
+         $late_fee,
+         $deposit_status,
+         $rental_id
+);
         if ($stmt->execute()) {
             // Update tool status back to available
             $stmt = $conn->prepare("UPDATE tools SET status = 'available' WHERE id = ?");
