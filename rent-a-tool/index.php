@@ -284,9 +284,9 @@ $stats['rentals'] = $result->fetch_assoc()['count'];
                 <div class="footer-section">
                     <h4>Contact</h4>
                     <ul>
-                        <li><i class="bi bi-envelope"></i> support@rentatool.com</li>
-                        <li><i class="bi bi-telephone"></i> 1-800-RENT-TOOL</li>
-                        <li><i class="bi bi-geo-alt"></i> 123 Tool Street, City</li>
+                        <li><i class="bi bi-envelope"></i> raymonestlane@rentatool.com</li>
+                        <li><i class="bi bi-telephone"></i> 09660065807</li>
+                        <li><i class="bi bi-geo-alt"></i> 2208  Barangay Del Pilar, Municipality of Castillejos, Province of Zambales, Central Luzon, Philippines</li>
                     </ul>
                 </div>
             </div>
